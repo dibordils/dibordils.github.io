@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos del header */
+.header {
+    position: relative;
+    height: 130px;
+    background-image: url('fondo.jpg'); /* Cambia a tu imagen de fondo */
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img {
+    width: 50px; /* Ajusta el tamaño de tu logo */
+    margin-bottom: 5px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Aviso de cookies */
+.cookie-notice {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Secciones */
+section {
+    padding: 60px 20px;
+    background: #f4f4f4;
+    margin: 20px 0;
+}
+
+/* Estilos de la tarjeta de biografía */
+.bio-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.icon img {
+    width: 30px;
+    margin: 0 10px;
+    transition: filter 0.3s;
+}
+
+.icon:hover img {
+    filter: brightness(0.5);
+}
+
+/* Estilos de la galería de proyectos */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Estilos de habilidades */
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill-bar {
+    height: 10px;
+    background: #007BFF;
+    border-radius: 5px;
+}
+
+/* Estilos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5
+}

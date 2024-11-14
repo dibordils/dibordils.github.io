@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f8fa;
+        }
+        header {
+            background-color: #1DA1F2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .tweet-box {
+            width: 90%;
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .tweet-box input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .tweet-box button {
+            background-color: #1DA1F2;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .tweet-box button:hover {
+            background-color: #0d8baf;
+        }
+        .tweets {
+            width: 90%;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        .tweet {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .tweet p {
+            font-size: 16px;
+            margin: 0;
+        }
+        footer {
+            background-color: #1DA1F2;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Twitter</h1>
+    </header>
+
+    <div class="tweet-box">
+        <input type="text" id="tweetInput" placeholder="¿Qué está pasando?">
+        <button onclick="tweet()">Twittear</button>
+    </div>
+
+    <div class="tweets" id="tweetsContainer">
+        <!-- Los tweets aparecerán aquí -->
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Twitter. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Función para agregar un tweet a la página
+        function tweet() {
+            var tweetInput = document.getElementById("tweetInput").value;
+            if (tweetInput.trim() !== "") {
+                var tweetsContainer = document.getElementById("tweetsContainer");
+                var tweetDiv = document.createElement("div");
+                tweetDiv.classList.add("tweet");
+                tweetDiv.innerHTML = "<p>" + tweetInput + "</p>";
+                tweetsContainer.prepend(tweetDiv);
+                document.getElementById("tweetInput").value = ""; // Limpiar el campo de texto
+            }
+        }
+    </script>
+
+</body>
+</html>

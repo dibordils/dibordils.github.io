@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Diego</title>
+    <link rel="stylesheet" href="/Visualcode/styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        <div class="banner">
+            <h1>Diego</h1>
+            <img src="/Visualcode/logo1.png" alt="Logo" class="logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Aviso de cookies -->
+    <div class="cookie-notice" id="cookie-notice">
+        Este sitio utiliza cookies. <button id="close-cookie">Cerrar</button>
+    </div>
+
+    <!-- Sección de Inicio -->
+    <section id="inicio">
+        <h2>Bienvenido a mi portafolio</h2>
+        <p>Descubre mis proyectos y habilidades.</p>
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi">
+        <div class="bio-card">
+            <h2>Sobre Mí</h2>
+            <p>Soy Diego, un apasionado de la programación y el diseño web. He estudiado en Enseñanzas Profesionales Sorolla y he trabajado en algunas de las empresas punteras en tecnología como Amazon. Me encanta aprender y desarrollar nuevas habilidades.</p>
+            <div class="social-icons">
+                <a href="/Visualcode/facebook.html" class="icon" title="Facebook"><img src="/Visualcode/facebook.jpg" alt="Facebook"></a>
+                <a href="/Visualcode/twitter.html" class="icon" title="Twitter"><img src="/Visualcode/twitter.png" alt="Twitter"></a>
+                <a href="/Visualcode/curriculum.png" class="icon" title="CV"><img src="/Visualcode/cv.png" alt="CV"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Galería de Proyectos -->
+    <section id="proyectos">
+        <h2>Galería de Proyectos</h2>
+        <div class="grid-container">
+            <div class="project-card">
+                <a href="/Visualcode/Que-es-el-DNS.pptx" class="icon" title="DNS"><img src="/Visualcode/dns.png" alt="Proyecto 1"></a>
+                <h3>¿Que es el DNS?</h3>
+                <p>Power Point acerca del DNS y como configurarlo</p>
+            </div>
+            <div class="project-card">
+                <a href="/Visualcode/Plandeseguridad.docx" class="icon" title="Plan de Seguridad"><img src="/Visualcode/seguridad.png" alt="Proyecto 2"></a>
+                <h3>Plan de Seguridad</h3>
+                <p>Un pequeño plan de seguridad para una empresa tecnológica</p>
+            </div>
+            <div class="project-card">
+                <a href="/Visualcode/controlador de dominio Ubuntu.one" class="icon" title="Ubuntu server"><img src="/Visualcode/ubuntuserver.png" alt="Proyecto 3"></a>
+                <h3>Ubuntu server</h3>
+                <p>Pequeño tutorial de instalación de Ubuntu server</p>
+            </div>
+            <div class="project-card">
+                <a href="/Visualcode/Instalación equipo cliente.one" class="icon" title="Equipo cliente"><img src="/Visualcode/desktop.jpg" alt="Proyecto 4"></a>
+                <h3>Equipo cliente</h3>
+                <p>Pequeño tutorial de instalación de un equipo cliente ubuntu</p>
+            </div>
+            <div class="project-card">
+                <a href="/Visualcode/Redirección y filtros.one" class="icon" title="Redirección y filtros"><img src="/Visualcode/redireccion.jpg" alt="Proyecto 5"></a>
+                <h3>Proyecto 5</h3>
+                <p>¿Como utilizar la redirección y los filtros?</p>
+            </div>
+            <div class="project-card">
+                <a href="/Visualcode/Chuleta de comandos de Ubuntu.one" class="icon" title="Chuleta de comandos"><img src="/Visualcode/comandos.png" alt="Proyecto 6"></a>
+                <h3>Proyecto 6</h3>
+                <p>Pequeña lista de comandos de ubuntu</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="habilidades">
+        <h2>Habilidades y Conocimientos</h2>
+        <div class="skill">
+            <h3>HTML</h3>
+            <p>Lenguaje de marcado para la creación de páginas web.</p>
+            <div class="skill-bar" style="width: 90%;"></div>
+        </div>
+        <div class="skill">
+            <h3>CSS</h3>
+            <p>Estilos para la presentación de páginas web.</p>
+            <div class="skill-bar" style="width: 80%;"></div>
+        </div>
+        <div class="skill">
+            <h3>JavaScript</h3>
+            <p>Lenguaje de programación para el desarrollo web.</p>
+            <div class="skill-bar" style="width: 70%;"></div>
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Quieres contratarme? ¡Hablemos!</p>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2024 Diego</p>
+    </footer>
+
+    <script>
+        // Ocultar el aviso de cookies después de 5 segundos
+        setTimeout(() => {
+            const cookieNotice = document.getElementById('cookie-notice');
+            cookieNotice.style.display = 'none';
+        }, 5000);
+
+        // Cerrar aviso de cookies al hacer clic en el botón
+        document.getElementById('close-cookie').addEventListener('click', () => {
+            const cookieNotice = document.getElementById('cookie-notice');
+            cookieNotice.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
